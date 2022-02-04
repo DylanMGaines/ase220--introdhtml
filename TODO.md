@@ -1,0 +1,22 @@
+# To Do
+- Flexbox Organized
+    - **Row 1** -- Heading with Name
+    - **Row 2** -- Picture
+    - **Row 3** -- 3 paragraphs of bio
+        - Professional Goals
+        - Hobbies
+        - Fun Fact
+        - LinkedIn Link
+    - **Row 4** -- Five Images Representing Some Relevant Item
+        - Band, TV show, pets, town, life pics
+        - All in same line if window > 600 px, else column
+    - **Row 5** -- Contact Form with necessary input field
+- Background changes color
+    - when page width is....
+        - < 600px
+        - \> 750 px
+        - \> 900 px
+        - \> 1100 px
+- ~~Use Bootstrap~~
+- Incorporate External Font Family
+- upload to Github
