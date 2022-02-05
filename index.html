@@ -12,24 +12,71 @@
     <!--External Font Placeholder-->
 
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@500&display=swap');
+        #nameTag {
+            font-family: 'Lobster', cursive;
+        }
+        
+        #pfp {
+            width: 90%;
+        }
+        
+        .bioStuff {
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        @media screen and (min-width: 600px) {
+            #pfp {
+                width: 75%;
+            }
+        }
+        
+        @media screen and (min-width: 750px) {
+            #pfp {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (min-width: 900px) {
+            #pfp {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (min-width: 1100px) {
+            #pfp {
+                width: 20%;
+            }
+        }
     </style>
     <title>Dylan Gaines -- introdHTML</title>
 </head>
 
 <body id="body">
-    <main class="d-flex justify-content-center px-3 mx-4">
+    <main class="d-flex flex-column align-items-center px-3 mx-4">
         <!--row one-->
-        <div class="flex-row">
-            <h1 id="nameTag" class="flex-column">Dylan Gaines</h1>
+        <div id="nameBin" class="flex-row justify-content-center">
+            <h1 class="fs-1" id="nameTag">Dylan Gaines</h1>
         </div>
         <!--row two - image (me)-->
-        <div id="pfp" class="flex-row">
-
+        <div id="pfpBin" class="flex-row">
+            <!--Had to set display to block for image to align properly-->
+            <img id="pfp" src="./media/me.jpg" class="mx-auto d-block img-thumbnail rounded-circle" style="justify-self: center;">
         </div>
+        <hr>
         <!--row three - bio and links -->
-        <div id="bioBin" class="flex-row">
-
+        <div id="bioBin" class="d-flex flex-row flex-wrap">
+            <p class="bioStuff">
+                I'm a 22 year old Applied Software Engineering Major at NKU with a minor in Computer Science. I adore the process of software development the more I learn about it, and have resolved myself to being a full-stack application developer. I live near Lawrenceburg,
+                Indiana and currently work for a grocery store. I've only recently begun to commit to the software engineering career as I finally feel I've developed enough skill.
+            </p>
+            <p class="bioStuff">
+                I love games of all types, from board to card to video, games have always been a hobby of mine. ~~I may not be the best at them but that's not what's important here.~~ I love playing with our family dog Sugar. To give you an idea of what *she's* like,
+                for christmas I bought one of those rubber chickens as a gag gift and she now treats it as though it is her child.
+            </p>
+            <p class="bioStuff">
+                I'm a tenacious, hopelessly optimistic procrastinator fueled by spite and a love for those around me. In other words, I love my friends, I hate my friends, and they're my reason for pushing myself as hard as I do, even if I'm not the best at scheduling.
+            </p>
         </div>
         <!--row four -  images (five)-->
         <div id="imgBin" class="flex-row">
