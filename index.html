@@ -13,6 +13,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@500&display=swap');
         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+        * {
+            transition: all 0.25s ease-in-out;
+            -webkit-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.25s ease-in-out;
+        }
+        
         #nameTag {
             font-family: 'Lobster', cursive;
         }
@@ -25,9 +31,22 @@
             font-family: 'Roboto Slab', serif;
         }
         
+        #imgBin {
+            border: .25em solid #aeb3b8;
+            border-spacing: 0;
+            padding: 0;
+        }
+        
+        #body {
+            background-color: #c094dd;
+        }
+        
         @media screen and (min-width: 600px) {
             #pfp {
                 width: 75%;
+            }
+            #body {
+                background-color: #a894dd;
             }
         }
         
@@ -35,11 +54,17 @@
             #pfp {
                 width: 40%;
             }
+            #body {
+                background-color: #94b0dd;
+            }
         }
         
         @media screen and (min-width: 900px) {
             #pfp {
                 width: 25%;
+            }
+            #body {
+                background-color: #94dddd;
             }
         }
         
@@ -47,16 +72,19 @@
             #pfp {
                 width: 20%;
             }
+            #body {
+                background-color: #94dda6;
+            }
         }
     </style>
     <title>Dylan Gaines -- introdHTML</title>
 </head>
 
 <body id="body">
-    <main id="mainMan" class="d-flex flex-column align-items-center px-3 m-4">
+    <main id="mainMan" class="d-flex flex-column align-items-center px-3 m-4 card">
         <!--row one-->
         <div id="nameBin" class="text-center">
-            <h1 id="nameTag" class="text-dark display-1">Dylan Gaines</h1>
+            <h1 id="nameTag" class="display-1">Dylan Gaines</h1>
         </div>
 
         <!--row two - image (me)-->
@@ -68,13 +96,13 @@
         <!--row three - bio and links -->
         <div id="bioBin " class="d-flex flex-row flex-wrap justify-content-center">
             <a id="aLinkedIn" href="https://www.linkedin.com/in/dylanmgaines/" class="bi-linkedin link-secondary fs-2 px-2 text-decoration-none">
-                <span class="fs-4 d-none d-sm-inline">dylanmgaines</span>
+                <span class="fs-6 d-none d-sm-inline">dylanmgaines</span>
             </a>
             <a id="aGithub" href="https://github.com/DylanMGaines" class="bi-github text-decoration-none link-secondary fs-2 px-2">
-                <span class="fs-4 d-none d-sm-inline">DylanMGaines</span>
+                <span class="fs-6 d-none d-sm-inline">DylanMGaines</span>
             </a>
             <h2 class="container-fluid text-center mt-4">About Me</h2>
-            <div class="row mt-0 mx-2 mx-lg-4 small">
+            <div class="row mt-0 mx-2 mx-lg-4">
                 <p class="bioStuff col-lg-4 col-12">
                     I'm a 22 year old Applied Software Engineering Major at NKU with a minor in Computer Science. I adore the process of software development the more I learn about it, and have resolved myself to being a full-stack application developer. I live near Lawrenceburg,
                     Indiana and currently work for a grocery store. I've only recently begun to commit to the software engineering career as I finally feel I've developed enough skill.
